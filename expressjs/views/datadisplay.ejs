@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table border="2">
+      <tr>
+        <th>Reg No</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>email</th>
+        <th>marks</th>
+      </tr>
+      <% rows.forEach((row) => { %> 
+        <tr>
+          <td><%= row.reg_no %></td>
+          <td><%= row.name %></td>
+          <td><%= row.branch %></td>
+          <td><%= row.email %></td>
+          <td><%= row.marks %></td>
+        </tr>       
+      <% }) %>
+    </table>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table border="2">
+      <tr>
+        <th>Reg No</th>
+        
+      </tr>
+      <% rows.forEach((row) => { %> 
+        <tr>
+          <td><%= row.reg_no %></td>
+          
+        </tr>       
+      <% }) %>
+    </table>
+  </body>
+</html> -->

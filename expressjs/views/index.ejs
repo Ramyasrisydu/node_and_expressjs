@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table border="2">
+      <tr>
+        <th>Post Title</th>
+        <th>Message</th>
+      </tr>
+      <% posts.forEach((post) => { %> 
+        <tr>
+          <td><%= post.title %></td>
+          <td><%= post.message %></td>
+        </tr>       
+      <% }) %>
+    </table>
+  </body>
+</html>

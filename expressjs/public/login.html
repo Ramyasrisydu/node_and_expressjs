@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <form action="/loginsubmit" method="post">
+
+        <table align="center">
+            <tr>
+                <td align="right">RegNo:&emsp;</td>
+                <td><input type="text" placeholder="Enter your RegNo" name="rnum"></td>
+            </tr>
+            <tr>
+                <td align="right">Name:&emsp;</td>
+                <td><input type="text" placeholder="Enter your Name" name="name"></td>
+            </tr>
+            <tr>
+                <td align="right">Father Name:&emsp;</td>
+                <td><input type="text" placeholder="Enter your Father Name" name="fname"></td>
+            </tr>
+            <tr>
+                <td align="right">Gender:&emsp;</td>
+                <td><input type="radio" name="m" id='m'><label for="m">male</label>
+                    <input type="radio" name='m' id='m'><label for="f">female</label></td>
+            </tr>
+            <tr>
+                <td align="right">Date of birth:&emsp;</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td align="right">Languages Knows:&emsp;</td>
+                <td><input type="checkbox" name="lan" id='l1'>
+                    <label for="l1">c++</label>
+                    <input type="checkbox" name="lan" id='l2'>
+                    <label for="l2">java</label>
+                    <input type="checkbox" name="lan" id='l3'>
+                    <label for="l3">c</label><br>
+                    <input type="checkbox" name="lan" id='l4'>
+                    <label for="l4">python</label>
+                        <input type="checkbox" name="lan" id='l5'>
+                    <label for="l5">R</label>
+                    <input type="checkbox" name="lan" id='l6'>
+                    <label for="l6">Julla</label>
+                </td>
+            </tr>
+            <tr>
+                   <td align="right">Address:&emsp;</th>
+                <td><textarea name="message" rows="10" cols="30" placeholder="Enter Your Area"></textarea></th>
+                </tr><br><br>
+                <tr>
+                    <td align="center" colspan="2"><br><input type="submit" value="login">&emsp;&emsp;<input type="reset" value="reset"></td>
+                </tr>
+            </table>
+        <input type="hidden" name="option" value="login">
+        </form>
+    </body>
+</html>
+
+
